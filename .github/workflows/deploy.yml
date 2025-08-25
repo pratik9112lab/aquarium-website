@@ -20,7 +20,7 @@ jobs:
       uses: appleboy/ssh-action@v0.1.8
       with:
         host: ${{ secrets.EC2_HOST }}
-        username: ubuntu
+        username: root
         key: ${{ secrets.EC2_KEY }}
         script: |
           docker stop aquarium-website || true
