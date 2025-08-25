@@ -28,7 +28,7 @@ jobs:
           docker rmi aquarium-website || true
           cd /home/ubuntu
           rm -rf aquarium-website || true
-          git clone https://github.com/<your-username>/aquarium-website.git
+          git clone https://github.com/pratik9112lab/aquarium-website.git
           cd aquarium-website
           docker build -t aquarium-website .
           docker run -d -p 80:80 --name aquarium-website aquarium-website
